@@ -17,6 +17,7 @@
     /* dark-1 */
     .text-light-gray-2{
         color: #131313;
+        
     }
     /* dark-2 */
     .text-gray{
@@ -26,7 +27,12 @@
     .text-light-gray{
         
         color:#727272;
+        font-size: 16px;
+        font-weight: 400;
         
+    }
+    .dark-3{
+        color: #727272;
     }
     .quick-list{
         color: #FF900E;
@@ -93,7 +99,7 @@
     font-size: 16px;
 }
 .banner-image{
-    width: 100%;
+    width:100%;
     margin: 0 auto;
     
 }
@@ -111,6 +117,43 @@
 .team-feature{
     max-width: 530px;
 }
+/* enjoy and feature related style */
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left:-100px;
+    margin-top: -100px;
+}
+#experience-year{
+     color: white;
+     font-size: 4rem;
+     font-weight: 700;
+}
+.feature{
+    gap: 120px;
+}
+#feature-section-title{
+    border-left:5px solid #FF900E;
+    padding-left: 21px;
+    
+}
+.feature-card{
+    padding: 30px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 16px;
+    border-radius: 8px;
+    
+}
+.feature-card .text-decoration{
+    color: #131313;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+ 
 
 /* some facts */
 
@@ -158,9 +201,31 @@
     filter: grayscale(100%);
      
  }
+ /* footer related style */
+ footer{
+    background-color: rgba(255, 244, 231, 1);
+    margin-top: 130px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    margin-bottom: 216px;
+    border-radius: 8px;
+ }
+ .footer-text{
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding-top: 39px;
+    padding-bottom: 39px;
+ }
+  
 /* responsive of small device */
 @media screen and (max-width:576px) {
-    .navbar, .nav-links,.teams{
+    main > section {
+        margin-top: 130px;
+       margin-left: 0px;
+       margin-right: 0px;
+    }
+    .navbar, .nav-links,.teams,.feature{
         flex-direction: column;
     }
     .banner-image{
@@ -188,11 +253,32 @@
         justify-content: center;
         gap: 40px;
     }
-     
+    .feature-architect img{
+        width: 100%;
+    }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .sponsor-companies{
+         margin-left: 105px;
+    }
+    .fact-card{
+        margin-left: 64px;
+    }
+    footer {
+        background-color: rgba(255, 244, 231, 1);
+        margin-top: 90px;
+        text-align: center;
+        margin-bottom: 116px;
+        border-radius: 8px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }
 /* responsive of medium device */
 @media screen and (min-width:576px) and (max-width:992px) {
-    .teams, .nav-item, .navbar{
+    .teams, .nav-item, .navbar,.feature{
          flex-direction: column;
     }
     .some-fact{
@@ -202,5 +288,16 @@
     .sponsor-companies{
         grid-template-columns: repeat(3,1fr);
         gap: 30px;
+    }
+    #experience-badge{
+        margin-top: 14px;
+        margin-left: 154px;
+    }
+    .feature-architect img{
+        width: 100%;
+    }
+    .footer-text{
+        padding-left: 98px;
+        padding-right: 68px;
     }
 }
